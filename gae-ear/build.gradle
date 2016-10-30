@@ -1,0 +1,38 @@
+apply plugin: 'ear'
+apply plugin: 'appengine'
+
+dependencies {
+    // App Engine Gradle plugin
+    appengineSdk 'com.google.appengine:appengine-java-sdk:1.9.42'
+
+    deploy project(path: ':gae-default', configuration: 'archives')
+}
+
+// So gradle app engine plugin is downloaded from maven repository
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        // App Engine Gradle plugin
+        classpath 'com.google.appengine:gradle-appengine-plugin:1.9.42'
+    }
+}
+
+// App Engine Gradle plugin
+appengine {
+    jvmFlags = [
+            '-Dcom.google.appengine.devappserver_module.default.port=8080'
+    ]
+
+    downloadSdk true
+
+    appcfg {
+        oauth2 = true
+
+        app {
+            id = 'premik91-gae'
+        }
+    }
+}

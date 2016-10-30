@@ -1,0 +1,35 @@
+apply plugin: 'war'
+apply plugin: 'appengine'
+
+dependencies {
+    // App Engine Gradle plugin
+    appengineSdk 'com.google.appengine:appengine-java-sdk:1.9.42'
+
+    // jami dependencies
+    compile project(':gae-services')
+    testCompile project(path: ':gae-services', configuration: 'testArtifacts')
+}
+
+// So gradle app engine plugin is downloaded from maven repository
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        // App Engine Gradle plugin
+        classpath 'com.google.appengine:gradle-appengine-plugin:1.9.42'
+    }
+}
+
+// App Engine Gradle plugin
+appengine {
+    downloadSdk true
+    appcfg {
+        oauth2 = true
+
+        app {
+            id = 'premik91-gae'
+        }
+    }
+}

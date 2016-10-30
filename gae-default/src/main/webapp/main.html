@@ -1,0 +1,1063 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Athos</title>
+
+    <!-- Bootstrap -->
+    <link href="vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+    <!-- bootstrap-progressbar -->
+    <link href="vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+    <!-- JQVMap -->
+    <link href="vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet"/>
+
+    <!-- Custom Theme Style -->
+    <link href="build/css/custom.min.css" rel="stylesheet">
+  </head>
+
+  <body class="nav-md">
+
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+              <a href="index.html" class="site_title" ><img src="images/icon.png" alt="icon" style="margin-left:5px" /> <span>Athos</span></a>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <!-- menu profile quick info -->
+            <div class="profile">
+              <div class="profile_pic">
+                <img src="images/img.jpg" alt="..." class="img-circle profile_img tImageUrl">
+              </div>
+              <div class="profile_info">
+                <span>Welcome,</span>
+                <h2 class="tName">Hood Burger</h2>
+              </div>
+            </div>
+            <!-- /menu profile quick info -->
+
+            <br />
+
+            <!-- sidebar menu -->
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+              <div class="menu_section">
+                <h3>General</h3>
+                <ul class="nav side-menu">
+                  <li><a href="#index"><i class="fa fa-home"></i>Home</a></li>
+                  <li><a><i class="fa fa-gift"></i> Offers <span class="fa fa-chevron-down"></span></a>
+                      <ul class="nav child_menu">
+                          <li><a href="#offers_view">View</a></li>
+                          <li><a href="#offers_details">Create</a></li>
+                      </ul>
+                  </li>
+                    <li><a><i class="fa fa-star"></i> Challenges <span class="fa fa-chevron-down"></span></a>
+                        <ul class="nav child_menu">
+                            <li><a href="#challenges_view">View</a></li>
+                            <li><a href="#challenges_details">Create</a></li>
+                        </ul>
+                    </li>
+                </ul>
+              </div>
+
+            </div>
+            <!-- /sidebar menu -->
+
+            <!-- /menu footer buttons -->
+            <div class="sidebar-footer hidden-small">
+              <a data-toggle="tooltip" data-placement="top" title="Settings">
+                <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+              </a>
+              <a data-toggle="tooltip" data-placement="top" title="Logout" href="/">
+                <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+              </a>
+            </div>
+            <!-- /menu footer buttons -->
+          </div>
+        </div>
+
+        <!-- top navigation -->
+        <div class="top_nav">
+          <div class="nav_menu">
+            <nav>
+              <div class="nav toggle">
+                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+              </div>
+
+              <ul class="nav navbar-nav navbar-right">
+                <li class="">
+                  <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <img class="tImageUrl" src="images/img.jpg" alt="">
+                      <span class="tName">Hood Burger</span>
+                     <span class="fa fa-angle-down"></span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-usermenu pull-right">
+                    <li><a href="javascript:;"> Profile</a></li>
+                    <li>
+                      <a href="javascript:;">
+                        <span class="badge bg-red pull-right">50%</span>
+                        <span>Settings</span>
+                      </a>
+                    </li>
+                    <li><a href="javascript:;">Help</a></li>
+                    <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+                  </ul>
+                </li>
+
+                <li role="presentation" class="dropdown">
+                  <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
+                    <i class="fa fa-envelope-o"></i>
+                    <span class="badge bg-green">6</span>
+                  </a>
+                  <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
+                    <li>
+                      <a>
+                        <span class="image tImageUrl"><img src="images/img.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>John Smith</span>
+                          <span class="time">3 mins ago</span>
+                        </span>
+                        <span class="message">
+                          Film festivals used to be do-or-die moments for movie makers. They were where...
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <div class="text-center">
+                        <a>
+                          <strong>See All Alerts</strong>
+                          <i class="fa fa-angle-right"></i>
+                        </a>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <!-- /top navigation -->
+        <!-- page content -->
+        <div class="right_col" role="main">
+
+            <div id="index" style="display:none">
+                <div class="row tile_count">
+                    <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+                        <span class="count_top"><i class="fa fa-user"></i> Unique customers</span>
+                        <div class="count">1350</div>
+                        <span class="count_bottom"><i class="green">4% </i> From last Week</span>
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+                        <span class="count_top"><i class="fa fa-user"></i> Monthly active users</span>
+                        <div class="count">223</div>
+                        <span class="count_bottom"><i class="green"><i class="fa fa-sort-asc"></i>3% </i> From last Month</span>
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+                        <span class="count_top"><i class="fa fa-eur"></i> October revenue</span>
+                        <div class="count green">12,531€</div>
+                        <span class="count_bottom"><i class="green"><i class="fa fa-sort-asc"></i>34% </i> From last Month</span>
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+                        <span class="count_top"><i class="fa fa-paw"></i> Cows slaughtered</span>
+                        <div class="count">231</div>
+                        <span class="count_bottom"><i class="red"><i class="fa fa-sort-desc"></i>12% </i> From last Month</span>
+                    </div>
+                    <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+                        <span class="count_top"><i class="fa fa-refresh"></i> Vegan conversions</span>
+                        <div class="count">22</div>
+                        <span class="count_bottom"><i class="green"><i class="fa fa-sort-asc"></i>2% </i> From last Month</span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="dashboard_graph">
+
+                            <div class="row x_title">
+                                <div class="col-md-6">
+                                    <h3>Customers visits <small>All vs loyal</small></h3>
+                                </div>
+                                <div class="col-md-6">
+                                    <div id="reportrange" class="pull-right" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc">
+                                        <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>
+                                        <span>December 30, 2014 - January 28, 2015</span> <b class="caret"></b>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-9 col-sm-9 col-xs-12">
+                                <div id="placeholder33" style="height: 260px; display: none" class="demo-placeholder"></div>
+                                <div style="width: 100%;">
+                                    <div id="canvas_dahs" class="demo-placeholder" style="width: 100%; height:270px;"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-3 col-xs-12 bg-white">
+                                <div class="x_title">
+                                    <h2>Top Offer Performance</h2>
+                                    <div class="clearfix"></div>
+                                </div>
+
+                                <div class="col-md-12 col-sm-12 col-xs-6">
+                                    <div>
+                                        <p>Free burger</p>
+                                        <div class="">
+                                            <div class="progress progress_sm" style="width: 76%;">
+                                                <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="80"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p>Hud burger</p>
+                                        <div class="">
+                                            <div class="progress progress_sm" style="width: 76%;">
+                                                <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="60"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-sm-12 col-xs-6">
+                                    <div>
+                                        <p>iPod for everyone</p>
+                                        <div class="">
+                                            <div class="progress progress_sm" style="width: 76%;">
+                                                <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="40"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p>Free solata</p>
+                                        <div class="">
+                                            <div class="progress progress_sm" style="width: 76%;">
+                                                <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="50"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="offers_view" style="display:none">
+
+                <div class="clearfix"></div>
+                <div class="row">
+                    <div>
+                        <div class="x_panel">
+                            <div class="x_title">
+                                <div class="title_right">
+                                    <div class="col-md-5 col-sm-5 col-xs-12 pull-right top_search" style="margin:10px 0 0 0">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Search for...">
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-default" type="button">Go!</button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h1>View offers</h1>
+                            </div>
+                            <div class="x_content">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Name</th>
+                                            <th>Type</th>
+                                            <th>Discount</th>
+                                            <th>Activation cost</th>
+                                            <th>From</th>
+                                            <th>To</th>
+                                            <th>&nbsp;</th>
+                                            <th>&nbsp;</th>                                      
+                                        </tr>
+                                    </thead>
+                                    <tbody id="offers_list">
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="offers_details" style="display:none">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="x_panel">
+                            <div class="x_title">
+                                <h1 id="offer-title">Create new offer</h1>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="x_content">
+                                <br />
+                                <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
+                                    <div class="form-group">
+                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="offer-name">
+                                            Name:
+                                        </label>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <input type="text" id="offer-name" required="required" name="offer-name" class="form-control col-md-7 col-xs-12">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="offer-providerName">
+                                            Provider name:
+                                        </label>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <input type="text" id="offer-providerName" required="required" name="offer-providerName" class="form-control col-md-7 col-xs-12">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="offer-imageUrl">
+                                            Image url:
+                                        </label>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <input type="text" id="offer-imageUrl" required="required" name="offer-imageUrl" class="form-control col-md-7 col-xs-12">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="offer-description">
+                                            Description:
+                                        </label>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <textarea id="offer-description" required="required" class="form-control" name="offer-description" data-parsley-trigger="keyup" data-parsley-minlength="0" data-parsley-maxlength="200" data-parsley-minlength-message="Description"
+                                                data-parsley-validation-threshold="10"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="offer-date">
+                                            Valid in:
+                                        </label>
+                                        <div class="controls">
+                                            <div class="input-prepend input-group" style="padding-left:10px">
+                                                <span class="add-on input-group-addon"><i class="glyphicon glyphicon-calendar fa fa-calendar"></i></span>
+                                                <input type="text" style="width: 200px" name="offer-date" id="offer-date" class="form-control active" value="10/16/2016 - 10/17/2016" start="1476576000000" end="1476579600000">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="offer-discount">
+                                            Discount:
+                                        </label>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <input type="text" id="offer-discount" required="required" name="offer-discount" class="form-control col-md-7 col-xs-12">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="offer-cost">
+                                            Activation cost:
+                                        </label>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <input type="text" id="offer-cost" required="required" name="offer-cost" class="form-control col-md-7 col-xs-12">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="offer-type">Offer type:</label>
+                                        <div class="col-md-9 col-sm-9 col-xs-12">
+                                            <select id ="offer-type" class="select2_group form-control select2-hidden-accessible" tabindex="-1" aria-hidden="true" style="width:66%" name="offer-type">
+                                                <option value="0">Discount</option>
+                                                <option value="1">Purchases till one free</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-md-9 col-md-offset-3">
+                                            <span id="offer-submit" type="submit" class="btn btn-success">Create</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div id="offer-status" style="font-size:20px"></div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="challenges_view" style="display:none">
+
+                <div class="clearfix"></div>
+                <div class="row">
+                    <div>
+                        <div class="x_panel">
+                            <div class="x_title">
+                                <div class="title_right">
+                                    <div class="col-md-5 col-sm-5 col-xs-12 pull-right top_search" style="margin:10px 0 0 0">
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" placeholder="Search for...">
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-default" type="button">Go!</button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h1>View challenges</h1>
+                            </div>
+                            <div class="x_content">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Name</th>
+                                            <th>Type</th>
+                                            <th>Price</th>
+                                            <th>Points</th>
+                                            <th>From</th>
+                                            <th>To</th>
+                                            <th>&nbsp;</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="challenge_list"></tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="challenges_details" style="display:none">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="x_panel">
+                            <div class="x_title">
+                                <h1 id="offer-title">Create new challenge</h1>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div class="x_content">
+                                <br />
+                                <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
+                                    <div class="form-group">
+                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="challenge-name">
+                                            Name:
+                                        </label>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <input type="text" id="challenge-name" required="required" name="offer-name" class="form-control col-md-7 col-xs-12">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="challenge-description">
+                                            Description:
+                                        </label>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <textarea id="offer-description" required="required" class="form-control" name="challenge-description" data-parsley-trigger="keyup" data-parsley-minlength="0" data-parsley-maxlength="200" data-parsley-minlength-message="Description"
+                                                      data-parsley-validation-threshold="10"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="challenge-date">
+                                            Valid in:
+                                        </label>
+                                        <div class="controls">
+                                            <div class="input-prepend input-group" style="padding-left:10px">
+                                                <span class="add-on input-group-addon"><i class="glyphicon glyphicon-calendar fa fa-calendar"></i></span>
+                                                <input type="text" style="width: 200px" name="challenge-date" id="challenge-date" class="form-control active" value="10/16/2016 - 10/17/2016" start="1476576000000" end="1476579600000">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="challenge-points">
+                                            Points:
+                                        </label>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <input type="text" id="challenge-points" required="required" name="challenge-points" class="form-control col-md-7 col-xs-12">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="challenge-cost">
+                                            Cost:
+                                        </label>
+                                        <div class="col-md-6 col-sm-6 col-xs-12">
+                                            <input type="text" id="challenge-cost" required="required" name="challenge-cost" class="form-control col-md-7 col-xs-12">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="control-label col-md-3 col-sm-3 col-xs-12" for="offer-type">Challenge type:</label>
+                                        <div class="col-md-9 col-sm-9 col-xs-12">
+                                            <select id="challenge-type" class="select2_group form-control select2-hidden-accessible" tabindex="-1" aria-hidden="true" style="width:66%" name="offer-type">
+                                                <option value="0">Pay streak</option>
+                                                <option value="1">Visit store</option>
+                                                <option value="2">Spend x till y</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-md-9 col-md-offset-3">
+                                            <span id="challenge-submit" type="submit" class="btn btn-success">Create</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div id="challenge-status" style="font-size:20px"></div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- /page content -->
+            <!-- footer content -->
+            <footer>
+                <div class="pull-right">Athos © 2016</div>
+                <div class="clearfix"></div>
+            </footer>
+            <!-- /footer content -->
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="vendors/nprogress/nprogress.js"></script>
+    <!-- Chart.js -->
+    <script src="vendors/Chart.js/dist/Chart.min.js"></script>
+    <!-- gauge.js -->
+    <script src="vendors/gauge.js/dist/gauge.min.js"></script>
+    <!-- bootstrap-progressbar -->
+    <script src="vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+    <!-- iCheck -->
+    <script src="vendors/iCheck/icheck.min.js"></script>
+    <!-- Skycons -->
+    <script src="vendors/skycons/skycons.js"></script>
+    <!-- Flot -->
+    <script src="vendors/Flot/jquery.flot.js"></script>
+    <script src="vendors/Flot/jquery.flot.pie.js"></script>
+    <script src="vendors/Flot/jquery.flot.time.js"></script>
+    <script src="vendors/Flot/jquery.flot.stack.js"></script>
+    <script src="vendors/Flot/jquery.flot.resize.js"></script>
+    <!-- Flot plugins -->
+    <script src="vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
+    <script src="vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
+    <script src="vendors/flot.curvedlines/curvedLines.js"></script>
+    <!-- DateJS -->
+    <script src="vendors/DateJS/build/production/date.min.js"></script>
+    <!-- JQVMap -->
+    <script src="vendors/jqvmap/dist/jquery.vmap.min.js"></script>
+    <script src="vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+    <script src="vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
+    <!-- bootstrap-daterangepicker -->
+    <script src="js/moment/moment.min.js"></script>
+    <script src="js/datepicker/daterangepicker.js"></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="build/js/custom.min.js"></script>
+    <!-- Flot -->
+    <script>
+      $(document).ready(function() {
+        var data1 = [
+          [gd(2016, 10, 10), 121],
+          [gd(2016, 10, 11), 112],
+          [gd(2016, 10, 12), 124],
+          [gd(2016, 10, 13), 132],
+          [gd(2016, 10, 14), 109],
+          [gd(2016, 10, 15), 204],
+          [gd(2016, 10, 16), 98]
+        ];
+
+        var data2 = [
+          [gd(2016, 10, 10), 13],
+          [gd(2016, 10, 11), 12],
+          [gd(2016, 10, 12), 14],
+          [gd(2016, 10, 13), 15],
+          [gd(2016, 10, 14), 14],
+          [gd(2016, 10, 15), 23],
+          [gd(2016, 10, 16), 10]
+        ];
+        $("#canvas_dahs").length && $.plot($("#canvas_dahs"), [
+          data1, data2
+        ], {
+          series: {
+            lines: {
+              show: false,
+              fill: true
+            },
+            splines: {
+              show: true,
+              tension: 0.4,
+              lineWidth: 1,
+              fill: 0.4
+            },
+            points: {
+              radius: 0,
+              show: true
+            },
+            shadowSize: 2
+          },
+          grid: {
+            verticalLines: true,
+            hoverable: true,
+            clickable: true,
+            tickColor: "#d5d5d5",
+            borderWidth: 1,
+            color: '#fff'
+          },
+          colors: ["rgba(38, 185, 154, 0.38)", "rgba(3, 88, 106, 0.38)"],
+          xaxis: {
+            tickColor: "rgba(51, 51, 51, 0.06)",
+            mode: "time",
+            tickSize: [1, "day"],
+            //tickLength: 10,
+            axisLabel: "Date",
+            axisLabelUseCanvas: true,
+            axisLabelFontSizePixels: 12,
+            axisLabelFontFamily: 'Verdana, Arial',
+            axisLabelPadding: 10
+          },
+          yaxis: {
+            ticks: 8,
+            tickColor: "rgba(51, 51, 51, 0.06)",
+          },
+          tooltip: false
+        });
+
+        function gd(year, month, day) {
+          return new Date(year, month - 1, day).getTime();
+        }
+      });
+    </script>
+    <!-- /Flot -->
+      
+    <!-- Skycons -->
+    <script>
+      $(document).ready(function() {
+        var icons = new Skycons({
+            "color": "#73879C"
+          }),
+          list = [
+            "clear-day", "clear-night", "partly-cloudy-day",
+            "partly-cloudy-night", "cloudy", "rain", "sleet", "snow", "wind",
+            "fog"
+          ],
+          i;
+
+        for (i = list.length; i--;)
+          icons.set(list[i], list[i]);
+
+        icons.play();
+      });
+    </script>
+    <!-- /Skycons -->
+    
+    <!-- bootstrap-daterangepicker -->
+    <script>
+      $(document).ready(function() {
+
+        var cb = function(start, end, label) {
+          console.log(start.toISOString(), end.toISOString(), label);
+          $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
+        };
+
+        var optionSet1 = {
+          startDate: moment().subtract(29, 'days'),
+          endDate: moment(),
+          minDate: '01/01/2012',
+          maxDate: '12/31/2015',
+          dateLimit: {
+            days: 60
+          },
+          showDropdowns: true,
+          showWeekNumbers: true,
+          timePicker: false,
+          timePickerIncrement: 1,
+          timePicker12Hour: true,
+          ranges: {
+            'Today': [moment(), moment()],
+            'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+            'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+            'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+            'This Month': [moment().startOf('month'), moment().endOf('month')],
+            'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+          },
+          opens: 'left',
+          buttonClasses: ['btn btn-default'],
+          applyClass: 'btn-small btn-primary',
+          cancelClass: 'btn-small',
+          format: 'MM/DD/YYYY',
+          separator: ' to ',
+          locale: {
+            applyLabel: 'Submit',
+            cancelLabel: 'Clear',
+            fromLabel: 'From',
+            toLabel: 'To',
+            customRangeLabel: 'Custom',
+            daysOfWeek: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
+            monthNames: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+            firstDay: 1
+          }
+        };
+        $('#reportrange span').html(moment().subtract(29, 'days').format('MMMM D, YYYY') + ' - ' + moment().format('MMMM D, YYYY'));
+        $('#reportrange').daterangepicker(optionSet1, cb);
+        $('#reportrange').on('show.daterangepicker', function() {
+          console.log("show event fired");
+        });
+        $('#reportrange').on('hide.daterangepicker', function() {
+          console.log("hide event fired");
+        });
+        $('#reportrange').on('apply.daterangepicker', function(ev, picker) {
+          console.log("apply event fired, start/end dates are " + picker.startDate.format('MMMM D, YYYY') + " to " + picker.endDate.format('MMMM D, YYYY'));
+        });
+        $('#reportrange').on('cancel.daterangepicker', function(ev, picker) {
+          console.log("cancel event fired");
+        });
+        $('#options1').click(function() {
+          $('#reportrange').data('daterangepicker').setOptions(optionSet1, cb);
+        });
+        $('#options2').click(function() {
+          $('#reportrange').data('daterangepicker').setOptions(optionSet2, cb);
+        });
+        $('#destroy').click(function() {
+          $('#reportrange').data('daterangepicker').remove();
+        });
+      });
+    </script>
+    <!-- /bootstrap-daterangepicker -->
+
+
+    <script type="text/javascript">
+        var currentPage = "";
+        var structure = {
+            "index": {
+                "onOpen": function () { }
+            },
+            "offers_view": {
+                "parent": "fa-gift",
+                "onOpen": function () {
+                    $('#offers_list').empty();
+                    if (offers.length == 0) {
+                        onOfferLoad = structure['offers_view'].onOpen;
+                        return;
+                    } else {
+                        onOfferLoad = null;
+                    }
+                    for (var i = 0; i < offers.length; i++) {
+                        var row = $("<tr offer='"+ offers[i].id +"'></tr>")
+                            .append("<td>" + (i + 1) + "</td>")
+                            .append("<td>" + offers[i].n + "</td>")
+                            .append("<td>" + offerTypeToString(offers[i].t) + "</td>")
+                            .append("<td>" + offers[i].dP + "</td>")
+                            .append("<td>" + offers[i].pC + "</td>")
+                            .append("<td>" + timestampToDate(offers[i].dF) + "</td>")
+                            .append("<td>" + timestampToDate(offers[i].dT) + "</td>")
+                            .append("<td></td>")
+                            .append("<td><a href='javascript:viewOffer(" + offers[i].id + ")'>View</a></td>")
+                            .append("<td><a href='javascript:deleteOffer(" + offers[i].id + ")'>Delete</a></td>")
+                        $('#offers_list').append(row);
+                    }
+                }
+            },
+            "offers_details": {
+                "parent": "fa-gift",
+                "onOpen": function () {
+
+                }
+            },
+            "challenges_view": {
+                "parent": "fa-star",
+                "onOpen": function () {
+                    $('#challenges_list').empty();
+                    if (challenges.length == 0) {
+                        onChallengeLoad = structure['challenges_view'].onOpen;
+                        return;
+                    } else {
+                        onChallengeLoad = null;
+                    }
+                    for (var i = 0; i < challenges.length; i++) {
+                        var row = $("<tr challenge='" + challenges[i].id + "'></tr>")
+                            .append("<td>" + (i + 1) + "</td>")
+                            .append("<td>" + challenges[i].n + "</td>")
+                            .append("<td>" + challenges[i].t + "</td>")
+                            .append("<td>" + challenges[i].pV + "</td>")
+                            .append("<td>" + challenges[i].pC + "</td>")
+                            .append("<td>" + timestampToDate(challenges[i].dF) + "</td>")
+                            .append("<td>" + timestampToDate(challenges[i].dT) + "</td>")
+                            .append("<td></td>")
+                            .append("<td><a href='javascript:deleteChallenge(" + challenges[i].id + ")'>Delete</a></td>")
+                            .append("<td><a href='javascript:viewChallenge(" + challenges[i].id + ")'>Delete</a></td>")
+                        $('#challenge_list').append(row);
+                    }
+                }
+            },
+            "challenges_details": {
+                "parent": "fa-star",
+                "onOpen": function () {
+
+                }
+            },
+        };
+var onOfferLoad = null;
+var onChallengeLoad = null;
+var navInited = false;
+function navigate(page) {
+    if (currentPage == page) return;
+    if (currentPage.length > 0) $('#' + currentPage).hide();
+    currentPage = page;
+    if (!navInited) {
+        navInited = true;
+        if (structure[currentPage].parent != null) {
+            var p = $('.' + structure[currentPage].parent).parent().parent();
+            p.addClass('active');
+            p.find('ul').show();
+        }
+    }
+    if (structure[currentPage].onOpen != null) structure[currentPage].onOpen();
+    $('#' + currentPage).show();
+}
+$(window).on('hashchange load', function () {
+    var page = window.location.hash.substr(1);
+    if (page.length == 0) page = 'index';
+    navigate(page);
+});
+
+function getUrlParameter(sParam) {
+    var sPageURL = decodeURIComponent(window.location.search.substring(1)),
+        sURLVariables = sPageURL.split('&'),
+        sParameterName,
+        i;
+
+    for (i = 0; i < sURLVariables.length; i++) {
+        sParameterName = sURLVariables[i].split('=');
+
+        if (sParameterName[0] === sParam) {
+            return sParameterName[1] === undefined ? true : sParameterName[1];
+        }
+    }
+}
+$('#offer-date').daterangepicker(null, function(start, end, label) {
+    $(this).attr({'start': start._d.getTime(), 'end': end._d.getTime() });
+});
+$('#challenge-date').daterangepicker(null, function (start, end, label) {
+    $(this).attr({ 'start': start._d.getTime(), 'end': end._d.getTime() });
+});
+function deleteOffer(offerId) {
+    $.ajax({
+        url: url + 'offer?oId=' + offerId, type: 'DELETE', data: null, success: function () {
+            $('[offer=' + offerId + ']').remove();
+            for (var i = 0; i < offers.length; i++) {
+                if (offers[i].id == offerId) {
+                    offers.splice(i, 1);
+                    break;
+                }
+            }
+        }, error: function () {
+            alert('Offer could not be deleted')
+        }
+    })
+}
+function deleteChallenge(challengeId) {
+    $.ajax({
+        url: url + 'challenge?cId=' + challengeId, type: 'DELETE', data: null, success: function () {
+            $('[challenge=' + challengeId + ']').remove();
+            for (var i = 0; i < challenges.length; i++) {
+                if (challenges[i].id == challengeId) {
+                    challenges.splice(i, 1);
+                    break;
+                }
+            }
+        }, error: function () {
+            alert('Offer could not be deleted')
+        }
+    })
+}
+$('#offer-submit').click(function () {
+    var obj = {};
+    obj.n = $('#offer-name').val();
+    obj.pN = $('#offer-providerName').val();
+    obj.iU = $('#offer-imageUrl').val();
+    obj.d = $('#offer-description').val();
+    obj.dF = $('#offer-date').attr('start');
+    obj.dT = $('#offer-date').attr('end');
+    obj.dP = $('#offer-discount').val();
+    obj.pC = $('#offer-cost').val();
+    obj.t = $('#offer-type').val();
+    w = [obj];
+
+    if ($('#offer_details').attr('offerId') == '0') {
+        $.ajax({
+            url: url + 'offer', type: 'PUT', data: JSON.stringify(w), contentType: "application/json", dataType: "json",
+            success: function (data) {
+                $('#offer-status').html('<span class="label label-success">Offer created successfuly</span>');
+                offers.push(data.b[0]);
+                //toEditOffer(data.b[0]);
+            }, error: function (data) {
+                $('#offer-status').html('<span class="label label-danger">Offer creation failed</span>');
+            }
+        });
+    } else {
+        $.ajax({
+            url: url + 'offer', type: 'POST', data: JSON.stringify(w), contentType: "application/json", dataType: "json",
+            success: function (data) {
+                $('#offer-status').html('<span class="label label-success">Offer created successfuly</span>');
+                offers.push(data.b[0]);
+                //toEditOffer(data.b[0]);
+            }, error: function (data) {
+                $('#offer-status').html('<span class="label label-danger">Offer creation failed</span>');
+            }
+        });
+    }
+});
+$('#challenge-submit').click(function () {
+    var obj = {};
+    obj.n = $('#challenge-name').val();
+    obj.d = $('#challenge-description').val();
+    obj.dF = $('#challenge-date').attr('start');
+    obj.dT = $('#challenge-date').attr('end');
+    obj.dP = $('#challenge-discount').val();
+    obj.dP = $('#challenge-cost').val();
+    obj.t = $('#challenge-type').val();
+    w = [obj];
+
+    if ($('#offer_details').attr('offerId') == '0') {
+        $.ajax({
+            url: url + 'offer', type: 'PUT', data: JSON.stringify(w), contentType: "application/json", dataType: "json",
+            success: function (data) {
+                $('#offer-status').html('<span class="label label-success">Offer created successfuly</span>');
+                offers.push(data.b[0]);
+                //toEditOffer(data.b[0]);
+            }, error: function (data) {
+                $('#offer-status').html('<span class="label label-danger">Offer creation failed</span>');
+            }
+        });
+    } else {
+        $.ajax({
+            url: url + 'offer', type: 'POST', data: JSON.stringify(w), contentType: "application/json", dataType: "json",
+            success: function (data) {
+                $('#offer-status').html('<span class="label label-success">Offer created successfuly</span>');
+                offers.push(data.b[0]);
+                //toEditOffer(data.b[0]);
+            }, error: function (data) {
+                $('#offer-status').html('<span class="label label-danger">Offer creation failed</span>');
+            }
+        });
+    }
+});
+function viewOffer(offerId) {
+    var obj = null;
+    for (var i = 0; i < offers.length; i++) {
+        if (offers[i].id == offerId) {
+            obj = offers[i];
+            break;
+        }
+    }
+
+    $('#offer_details').attr('type', obj.id);
+    $('#offer-title').text('Edit existing offer');
+    $('#offer-submit').text('Change');
+
+    $('#offer-name').val(obj.n);
+    $('#offer-providerName').val(obj.pN);
+    $('#offer-imageUrl').val(obj.iU);
+    $('#offer-description').val(obj.d);
+    $('#offer-date').attr('start', obj.dF);
+    $('#offer-date').attr('end', obj.dT);
+    $('#offer-discount').val(obj.dP);
+    $('#offer-cost').val(obj.pC);
+    $('#offer-type').val(obj.t);
+
+    navigate("offers_details");
+}
+function timestampToDate(ts) {
+    var d = new Date(ts);
+    return n2(d.getHours()) +
+        ":" + n2(d.getMinutes()) +
+        " " + (d.getMonth() + 1) +
+        "/" + d.getDate() +
+        "/" + d.getFullYear();
+}
+
+function n2(n) {
+    return (n < 10 ? '0' : '') + n;
+}
+
+function offerTypeToString(type) {
+    if (type == '0') return "Discount";
+    if (type == '1') return "Purchases till one free";
+}
+
+var url = "http://premik91-gae.appspot.com/rest/";
+var offers = [];
+var challenges = [];
+
+$.getJSON(url + "offer/list", function (data) {
+    offers = data.b;
+    if (onOfferLoad != null) onOfferLoad();
+});
+
+$.getJSON(url + "challenge/list", function (data) {
+    challenges = data.b;
+    if (onChallengeLoad != null) onChallengeLoad();
+});
+
+//$.getJSON(url + "user?uId=" + getUrlParameter("uId"), function (data) {
+//    user = data.b;
+//    if (user.iU == null) user.iU = "http://www.ew.com/sites/default/files/styles/tout_image_612x380/public/i/2015/04/24/joker-leto.jpg?itok=J6yw9yum";
+
+//    $(".tName").text(user.fN + " " + user.lN);
+//    $(".tImageUrl").attr('src', user.iU);
+
+
+//});
+
+    </script>
+  </body>
+</html>
