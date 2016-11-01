@@ -1,0 +1,33 @@
+{
+	"zadeve": [
+		{
+			"cName": "A-LES_DOO_IZV 2013-10006",
+			"ID": 4,
+			"izvStevilka": "IZV 2013/10006",
+			"dolznik": "A-LES D.O.O.",
+			"dNaslov": "Podmilščakova 20",
+			"dKraj": "Škofije",
+			"upnik": "MLADINSKA KNJIGA ZALOŽBA d.d."
+		},
+		{
+			"cName": "SLOBODAN_B_IZV 2013-00007-3",
+			"ID": 5,
+			"izvStevilka": "IZV 2013/00007-3",
+			"dolznik": "SLOBODAN B",
+			"dNaslov": "PARTIZANSKA CESTA 47",
+			"dKraj": "Škofja Loka",
+			"upnik": "DINERS CLUB SLO d.o.o."
+		},
+		{
+			"cName": "FRAS_ZV_IZV 2016-04988",
+			"ID": 0,
+			"izvStevilka": null,
+			"dolznik": null,
+			"dNaslov": null,
+			"dKraj": null,
+			"upnik": null
+		}
+	],
+	"ReturnType": 0,
+	"ErrorMessage": null
+}

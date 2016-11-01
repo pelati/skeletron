@@ -11,6 +11,7 @@ public class OfyFactory extends ObjectifyFactory {
             .add(Challenge.class)
             .add(User.class)
             .add(Offer.class)
+            .add(Zadeva.class)
             .build();
 
     public OfyFactory() {

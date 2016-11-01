@@ -10,6 +10,7 @@ import com.jami.challenge.rest.ChallengeFacade;
 import com.jami.offer.rest.OfferFacade;
 import com.jami.toshl.rest.ToshlFacade;
 import com.jami.user.rest.UserFacade;
+import com.jami.zadeva.rest.ZadevaFacade;
 
 public class RestApplication extends Application {
     public static final Set<Object> facades = createFacades();
@@ -31,6 +32,7 @@ public class RestApplication extends Application {
                 .add(new OfferFacade())
                 .add(new ToshlFacade())
                 .add(new ChallengeFacade())
+                .add(new ZadevaFacade())
                 .build();
     }
 

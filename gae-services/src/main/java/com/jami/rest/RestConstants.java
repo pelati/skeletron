@@ -15,5 +15,6 @@ public class RestConstants {
     public static final String USER_ID = "uId";
     public static final String OFFER_ID = "oId";
     public static final String CHALLENGE_ID = "cId";
+    public static final String ZADEVA_ID = "zId";
 
 }

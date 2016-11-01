@@ -29,7 +29,7 @@ appengine {
         oauth2 = true
 
         app {
-            id = 'premik91-gae'
+            id = 'pelati-tomasl'
         }
     }
 }

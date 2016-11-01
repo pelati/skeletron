@@ -14,7 +14,7 @@ subprojects {
 
     dependencies {
         // GAE SDK
-        compile 'com.google.appengine:appengine-api-1.0-sdk:1.9.42'
+        compile 'com.google.appengine:appengine-api-1.0-sdk:1.9.44'
 
         // Used for DS operations
         compile 'com.googlecode.objectify:objectify:5.1.11'
