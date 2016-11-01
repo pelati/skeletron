@@ -57,21 +57,3 @@ web application directory each time you run this task. This behavior can be chan
     "p" : 6
   } ]
 }
-
-## Endpoints
-pelati.appspot.com/rest/user              (create)       - POST (list of offers in body)
-pelati.appspot.com/rest/user              (delete)       - DELETE (?uId=1234)
-pelati.appspot.com/rest/user              (get)          - GET (?uId=4321)
-pelati.appspot.com/rest/user/list         (get all)      - GET
-
-pelati.appspot.com/rest/offer             (create)       - POST (list of offers in body)
-pelati.appspot.com/rest/offer             (delete one)   - DELETE (?oId=1234)
-pelati.appspot.com/rest/offer             (get for user) - GET (?uId=4321)
-pelati.appspot.com/rest/offer/delete      (delete list)  - POST (list of offers in body)
-pelati.appspot.com/rest/offer/list        (get all)      - GET
-
-pelati.appspot.com/rest/challenge         (create)       - POST (list of challenges in body)
-pelati.appspot.com/rest/challenge         (delete one)   - DELETE (?cId=1234)
-pelati.appspot.com/rest/challenge         (get for user) - GET (?uId=4321)
-pelati.appspot.com/rest/challenge/delete  (delete list)  - POST (list of challenges in body)
-pelati.appspot.com/rest/challenge/list    (get all)      - GET
